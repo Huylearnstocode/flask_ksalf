@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Admin Page {% endblock %}
+
+{% block body %}
+
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Người Dùng</th>
+            <th scope="col">Thông Tin Sách</th>
+            <th scope="col">Thêm Sách</th>
+            <th scope="col">Xem Đơn Hàng</th>
+
+        </tr>
+
+    </thead> 
+    <tbody>
+        <tr>
+        <td><a href="/customers">Người Dùng</a></td>
+        <td><a href="/shop-items">Thông Tin Sách</a></td>
+        <td><a href="/add-shop-items">Thêm Sách</a></td>
+        <td><a href="/view-orders">Xem Đơn Hàng</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+{% endblock %}
